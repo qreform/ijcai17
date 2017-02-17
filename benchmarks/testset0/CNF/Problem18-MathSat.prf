@@ -1,0 +1,37 @@
+cnf(47_0, ( l_p0 | l_p2 | ~l_f1 ), axiom, decoration(clause(left))).
+cnf(25_0, ( ~l_p0 | r_p0 ), axiom, decoration(clause(right))).
+res(48_10, 47_0, 25_0, l_p0; l_p0; l_p0, []).
+cnf(44_0, ( ~l_p2 | r_p2 ), axiom, decoration(clause(right))).
+res(48_9, 48_10, 44_0, l_p2; l_p2; l_p2, []).
+cnf(41_0, ( ~r_p0 | r_f1_p ), axiom, decoration(clause(right))).
+res(48_8, 48_9, 41_0, r_p0; r_p0; r_p0, []).
+cnf(40_0, ( ~r_p2 | r_f1_p ), axiom, decoration(clause(right))).
+res(48_7, 48_8, 40_0, r_p2; r_p2; r_p2, []).
+cnf(37_0, ( ~r_f1_p | r_f0_p ), axiom, decoration(clause(right))).
+res(48_6, 48_7, 37_0, r_f1_p; r_f1_p; r_f1_p, []).
+cnf(8_0, ( ~r_f0_p | ~r_f2_p ), axiom, decoration(clause(right))).
+res(48_5, 48_6, 8_0, r_f0_p; r_f0_p; r_f0_p, []).
+cnf(35_0, ( r_f2_p | ~r_f3_p ), axiom, decoration(clause(right))).
+res(48_4, 48_5, 35_0, r_f2_p; r_f2_p; r_f2_p, []).
+cnf(32_0, ( l_p3 | l_p0 | ~l_f3 ), axiom, decoration(clause(left))).
+cnf(28_0, ( ~l_p3 | r_p3 ), axiom, decoration(clause(right))).
+res(33_6, 32_0, 28_0, l_p3; l_p3; l_p3, []).
+res(33_5, 33_6, 25_0, l_p0; l_p0; l_p0, []).
+cnf(22_0, ( ~r_p3 | r_f3_p ), axiom, decoration(clause(right))).
+res(33_4, 33_5, 22_0, r_p3; r_p3; r_p3, []).
+cnf(20_0, ( ~r_p0 | r_f3_p ), axiom, decoration(clause(right))).
+res(33_3, 33_4, 20_0, r_p0; r_p0; r_p0, []).
+cnf(17_0, ( l_f3 | l_p1 ), axiom, decoration(clause(left))).
+res(33_2, 33_3, 17_0, l_f3; l_f3; l_f3, []).
+cnf(12_0, ( ~l_p1 | r_p1 ), axiom, decoration(clause(right))).
+res(33_1, 33_2, 12_0, l_p1; l_p1; l_p1, []).
+cnf(5_0, ( r_f2_p | ~r_p1 ), axiom, decoration(clause(right))).
+res(9_1, 8_0, 5_0, r_f2_p; r_f2_p; r_f2_p, []).
+cnf(3_0, ( r_f0_p | ~r_p1 ), axiom, decoration(clause(right))).
+res(9_0, 9_1, 3_0, r_f0_p; r_f0_p; r_f0_p, []).
+res(33_0, 33_1, 9_0, r_p1; r_p1; r_p1, []).
+res(48_3, 48_4, 33_0, r_f3_p; r_f3_p; r_f3_p, []).
+cnf(15_0, ( l_f1 | l_p1 ), axiom, decoration(clause(left))).
+res(48_2, 48_3, 15_0, l_f1; l_f1; l_f1, []).
+res(48_1, 48_2, 12_0, l_p1; l_p1; l_p1, []).
+res(48_0, 48_1, 9_0, r_p1; r_p1; r_p1, []).

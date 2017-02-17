@@ -1,0 +1,182 @@
+cnf(181_0, ( l_zcl_15 | ~l_f22 ), axiom, decoration(clause(left))).
+cnf(190_0, ( ~l_zcl_15 | l_f23 ), axiom, decoration(clause(left))).
+res(243_20, 181_0, 190_0, l_zcl_15; l_zcl_15; l_zcl_15, []).
+cnf(175_0, ( l_f22 | ~l_zcl_16 ), axiom, decoration(clause(left))).
+res(243_19, 243_20, 175_0, l_f22; l_f22; l_f22, []).
+cnf(196_0, ( ~l_f23 | l_zcl_14 ), axiom, decoration(clause(left))).
+res(243_18, 243_19, 196_0, l_f23; l_f23; l_f23, []).
+cnf(166_0, ( l_zcl_16 | ~l_f21 ), axiom, decoration(clause(left))).
+res(243_17, 243_18, 166_0, l_zcl_16; l_zcl_16; l_zcl_16, []).
+cnf(205_0, ( ~l_zcl_14 | l_f24 ), axiom, decoration(clause(left))).
+res(243_16, 243_17, 205_0, l_zcl_14; l_zcl_14; l_zcl_14, []).
+cnf(160_0, ( l_f21 | ~l_zcl_17 ), axiom, decoration(clause(left))).
+res(243_15, 243_16, 160_0, l_f21; l_f21; l_f21, []).
+cnf(211_0, ( ~l_f24 | l_zcl_13 ), axiom, decoration(clause(left))).
+res(243_14, 243_15, 211_0, l_f24; l_f24; l_f24, []).
+cnf(155_0, ( l_zcl_17 | ~l_f20 ), axiom, decoration(clause(left))).
+res(243_13, 243_14, 155_0, l_zcl_17; l_zcl_17; l_zcl_17, []).
+cnf(220_0, ( ~l_zcl_13 | l_f25 ), axiom, decoration(clause(left))).
+res(243_12, 243_13, 220_0, l_zcl_13; l_zcl_13; l_zcl_13, []).
+cnf(152_0, ( l_f20 | l_f14 | ~l_f13 ), axiom, decoration(clause(left))).
+res(243_11, 243_12, 152_0, l_f20; l_f20; l_f20, []).
+cnf(226_0, ( ~l_f25 | l_zcl_12 ), axiom, decoration(clause(left))).
+res(243_10, 243_11, 226_0, l_f25; l_f25; l_f25, []).
+cnf(148_0, ( ~l_f14 | l_zcl_11 ), axiom, decoration(clause(left))).
+res(243_9, 243_10, 148_0, l_f14; l_f14; l_f14, []).
+cnf(242_0, ( ~l_zcl_12 | l_p0 ), axiom, decoration(clause(left))).
+res(243_8, 243_9, 242_0, l_zcl_12; l_zcl_12; l_zcl_12, []).
+cnf(241_0, ( ~l_zcl_11 | l_p0 ), axiom, decoration(clause(left))).
+res(243_7, 243_8, 241_0, l_zcl_11; l_zcl_11; l_zcl_11, []).
+cnf(8_0, ( ~l_p0 | r_p0 ), axiom, decoration(clause(right))).
+res(243_6, 243_7, 8_0, l_p0; l_p0; l_p0, []).
+cnf(239_0, ( r_p6 | ~l_p6 ), axiom, decoration(clause(right))).
+cnf(236_0, ( ~r_p6 | r_f25_p | ~r_p0 ), axiom, decoration(clause(right))).
+res(240_57, 239_0, 236_0, r_p6; r_p6; r_p6, []).
+cnf(233_0, ( l_p6 | ~l_zcl_12 ), axiom, decoration(clause(left))).
+res(240_56, 240_57, 233_0, l_p6; l_p6; l_p6, []).
+cnf(230_0, ( ~r_f25_p | ~r_p5 | r_f24_p ), axiom, decoration(clause(right))).
+res(240_55, 240_56, 230_0, r_f25_p; r_f25_p; r_f25_p, []).
+res(240_54, 240_55, 226_0, l_zcl_12; l_zcl_12; l_zcl_12, []).
+cnf(223_0, ( r_p5 | ~l_p5 ), axiom, decoration(clause(right))).
+res(240_53, 240_54, 223_0, r_p5; r_p5; r_p5, []).
+res(240_52, 240_53, 220_0, l_f25; l_f25; l_f25, []).
+cnf(218_0, ( l_p5 | ~l_zcl_13 ), axiom, decoration(clause(left))).
+res(240_51, 240_52, 218_0, l_p5; l_p5; l_p5, []).
+cnf(215_0, ( ~r_f24_p | ~r_p4 | r_f23_p ), axiom, decoration(clause(right))).
+res(240_50, 240_51, 215_0, r_f24_p; r_f24_p; r_f24_p, []).
+res(240_49, 240_50, 211_0, l_zcl_13; l_zcl_13; l_zcl_13, []).
+cnf(208_0, ( r_p4 | ~l_p4 ), axiom, decoration(clause(right))).
+res(240_48, 240_49, 208_0, r_p4; r_p4; r_p4, []).
+res(240_47, 240_48, 205_0, l_f24; l_f24; l_f24, []).
+cnf(203_0, ( l_p4 | ~l_zcl_14 ), axiom, decoration(clause(left))).
+res(240_46, 240_47, 203_0, l_p4; l_p4; l_p4, []).
+cnf(200_0, ( ~r_f23_p | ~r_p3 | r_f22_p ), axiom, decoration(clause(right))).
+res(240_45, 240_46, 200_0, r_f23_p; r_f23_p; r_f23_p, []).
+res(240_44, 240_45, 196_0, l_zcl_14; l_zcl_14; l_zcl_14, []).
+cnf(193_0, ( r_p3 | ~l_p3 ), axiom, decoration(clause(right))).
+res(240_43, 240_44, 193_0, r_p3; r_p3; r_p3, []).
+res(240_42, 240_43, 190_0, l_f23; l_f23; l_f23, []).
+cnf(188_0, ( l_p3 | ~l_zcl_15 ), axiom, decoration(clause(left))).
+res(240_41, 240_42, 188_0, l_p3; l_p3; l_p3, []).
+cnf(185_0, ( ~r_f22_p | ~r_p2 | r_f21_p ), axiom, decoration(clause(right))).
+res(240_40, 240_41, 185_0, r_f22_p; r_f22_p; r_f22_p, []).
+res(240_39, 240_40, 181_0, l_zcl_15; l_zcl_15; l_zcl_15, []).
+cnf(178_0, ( r_p2 | ~l_p2 ), axiom, decoration(clause(right))).
+res(240_38, 240_39, 178_0, r_p2; r_p2; r_p2, []).
+res(240_37, 240_38, 175_0, l_f22; l_f22; l_f22, []).
+cnf(173_0, ( l_p2 | ~l_zcl_16 ), axiom, decoration(clause(left))).
+res(240_36, 240_37, 173_0, l_p2; l_p2; l_p2, []).
+cnf(170_0, ( ~r_f21_p | r_f20_p | ~r_p1 ), axiom, decoration(clause(right))).
+res(240_35, 240_36, 170_0, r_f21_p; r_f21_p; r_f21_p, []).
+res(240_34, 240_35, 166_0, l_zcl_16; l_zcl_16; l_zcl_16, []).
+cnf(163_0, ( r_p1 | ~l_p1 ), axiom, decoration(clause(right))).
+res(240_33, 240_34, 163_0, r_p1; r_p1; r_p1, []).
+res(240_32, 240_33, 160_0, l_f21; l_f21; l_f21, []).
+cnf(158_0, ( l_p1 | ~l_zcl_17 ), axiom, decoration(clause(left))).
+res(240_31, 240_32, 158_0, l_p1; l_p1; l_p1, []).
+res(240_30, 240_31, 155_0, l_zcl_17; l_zcl_17; l_zcl_17, []).
+res(240_29, 240_30, 152_0, l_f20; l_f20; l_f20, []).
+res(240_28, 240_29, 148_0, l_f14; l_f14; l_f14, []).
+cnf(145_0, ( ~l_zcl_11 | l_f15 ), axiom, decoration(clause(left))).
+res(240_27, 240_28, 145_0, l_zcl_11; l_zcl_11; l_zcl_11, []).
+cnf(142_0, ( ~l_f15 | l_zcl_10 ), axiom, decoration(clause(left))).
+res(240_26, 240_27, 142_0, l_f15; l_f15; l_f15, []).
+cnf(139_0, ( ~l_zcl_10 | l_f16 ), axiom, decoration(clause(left))).
+res(240_25, 240_26, 139_0, l_zcl_10; l_zcl_10; l_zcl_10, []).
+cnf(136_0, ( ~l_f16 | l_zcl_9 ), axiom, decoration(clause(left))).
+res(240_24, 240_25, 136_0, l_f16; l_f16; l_f16, []).
+cnf(133_0, ( ~l_zcl_9 | l_f17 ), axiom, decoration(clause(left))).
+res(240_23, 240_24, 133_0, l_zcl_9; l_zcl_9; l_zcl_9, []).
+cnf(130_0, ( ~l_f17 | l_zcl_8 ), axiom, decoration(clause(left))).
+res(240_22, 240_23, 130_0, l_f17; l_f17; l_f17, []).
+cnf(127_0, ( ~l_zcl_8 | l_f18 ), axiom, decoration(clause(left))).
+res(240_21, 240_22, 127_0, l_zcl_8; l_zcl_8; l_zcl_8, []).
+cnf(124_0, ( ~l_f18 | l_zcl_7 ), axiom, decoration(clause(left))).
+res(240_20, 240_21, 124_0, l_f18; l_f18; l_f18, []).
+cnf(121_0, ( ~l_zcl_7 | l_f19 ), axiom, decoration(clause(left))).
+res(240_19, 240_20, 121_0, l_zcl_7; l_zcl_7; l_zcl_7, []).
+cnf(118_0, ( ~l_f19 | l_zcl_6 ), axiom, decoration(clause(left))).
+res(240_18, 240_19, 118_0, l_f19; l_f19; l_f19, []).
+cnf(115_0, ( ~l_zcl_6 | l_p7 ), axiom, decoration(clause(left))).
+res(240_17, 240_18, 115_0, l_zcl_6; l_zcl_6; l_zcl_6, []).
+cnf(112_0, ( ~l_p7 | r_p7 ), axiom, decoration(clause(right))).
+res(240_16, 240_17, 112_0, l_p7; l_p7; l_p7, []).
+cnf(109_0, ( ~r_p7 | r_f19_p | ~r_p0 ), axiom, decoration(clause(right))).
+res(240_15, 240_16, 109_0, r_p7; r_p7; r_p7, []).
+cnf(106_0, ( ~r_f19_p | r_f18_p | ~r_p0 ), axiom, decoration(clause(right))).
+res(240_14, 240_15, 106_0, r_f19_p; r_f19_p; r_f19_p, []).
+cnf(103_0, ( ~r_f18_p | r_f17_p | ~r_p0 ), axiom, decoration(clause(right))).
+res(240_13, 240_14, 103_0, r_f18_p; r_f18_p; r_f18_p, []).
+cnf(100_0, ( ~r_f17_p | r_f16_p | ~r_p0 ), axiom, decoration(clause(right))).
+res(240_12, 240_13, 100_0, r_f17_p; r_f17_p; r_f17_p, []).
+cnf(97_0, ( ~r_f16_p | r_f15_p | ~r_p0 ), axiom, decoration(clause(right))).
+res(240_11, 240_12, 97_0, r_f16_p; r_f16_p; r_f16_p, []).
+cnf(94_0, ( ~r_f15_p | r_f14_p | ~r_p0 ), axiom, decoration(clause(right))).
+res(240_10, 240_11, 94_0, r_f15_p; r_f15_p; r_f15_p, []).
+cnf(91_0, ( ~r_f20_p | r_f13_p ), axiom, decoration(clause(right))).
+res(240_9, 240_10, 91_0, r_f20_p; r_f20_p; r_f20_p, []).
+cnf(89_0, ( ~r_f14_p | r_f13_p ), axiom, decoration(clause(right))).
+res(240_8, 240_9, 89_0, r_f14_p; r_f14_p; r_f14_p, []).
+cnf(86_0, ( ~r_f13_p | ~r_f7_p ), axiom, decoration(clause(right))).
+res(240_7, 240_8, 86_0, r_f13_p; r_f13_p; r_f13_p, []).
+cnf(83_0, ( r_f7_p | ~r_f8_p ), axiom, decoration(clause(right))).
+res(240_6, 240_7, 83_0, r_f7_p; r_f7_p; r_f7_p, []).
+cnf(80_0, ( r_f8_p | ~r_p0 ), axiom, decoration(clause(right))).
+res(240_5, 240_6, 80_0, r_f8_p; r_f8_p; r_f8_p, []).
+cnf(78_0, ( l_f13 | ~l_zcl_18 ), axiom, decoration(clause(left))).
+res(240_4, 240_5, 78_0, l_f13; l_f13; l_f13, []).
+cnf(75_0, ( l_zcl_18 | ~l_f6 ), axiom, decoration(clause(left))).
+res(240_3, 240_4, 75_0, l_zcl_18; l_zcl_18; l_zcl_18, []).
+cnf(72_0, ( l_f6 | l_f0 ), axiom, decoration(clause(left))).
+res(240_2, 240_3, 72_0, l_f6; l_f6; l_f6, []).
+cnf(69_0, ( ~l_f0 | l_zcl_5 ), axiom, decoration(clause(left))).
+res(240_1, 240_2, 69_0, l_f0; l_f0; l_f0, []).
+cnf(65_0, ( r_p11 | ~l_p11 ), axiom, decoration(clause(right))).
+cnf(62_0, ( r_f5_p | ~r_p0 | ~r_p11 ), axiom, decoration(clause(right))).
+res(66_20, 65_0, 62_0, r_p11; r_p11; r_p11, []).
+cnf(59_0, ( l_p11 | ~l_zcl_0 ), axiom, decoration(clause(left))).
+res(66_19, 66_20, 59_0, l_p11; l_p11; l_p11, []).
+cnf(56_0, ( ~r_p10 | r_f4_p | ~r_f5_p ), axiom, decoration(clause(right))).
+res(66_18, 66_19, 56_0, r_f5_p; r_f5_p; r_f5_p, []).
+cnf(52_0, ( l_zcl_0 | ~l_f5 ), axiom, decoration(clause(left))).
+res(66_17, 66_18, 52_0, l_zcl_0; l_zcl_0; l_zcl_0, []).
+cnf(49_0, ( r_p10 | ~l_p10 ), axiom, decoration(clause(right))).
+res(66_16, 66_17, 49_0, r_p10; r_p10; r_p10, []).
+cnf(46_0, ( l_f5 | ~l_zcl_1 ), axiom, decoration(clause(left))).
+res(66_15, 66_16, 46_0, l_f5; l_f5; l_f5, []).
+cnf(44_0, ( l_p10 | ~l_zcl_1 ), axiom, decoration(clause(left))).
+res(66_14, 66_15, 44_0, l_p10; l_p10; l_p10, []).
+cnf(41_0, ( l_zcl_1 | ~l_f4 ), axiom, decoration(clause(left))).
+res(66_13, 66_14, 41_0, l_zcl_1; l_zcl_1; l_zcl_1, []).
+cnf(38_0, ( l_f4 | ~l_zcl_2 ), axiom, decoration(clause(left))).
+res(66_12, 66_13, 38_0, l_f4; l_f4; l_f4, []).
+cnf(35_0, ( l_zcl_2 | ~l_f3 ), axiom, decoration(clause(left))).
+res(66_11, 66_12, 35_0, l_zcl_2; l_zcl_2; l_zcl_2, []).
+cnf(32_0, ( ~r_f4_p | r_f3_p | ~r_p0 ), axiom, decoration(clause(right))).
+res(66_10, 66_11, 32_0, r_f4_p; r_f4_p; r_f4_p, []).
+cnf(29_0, ( l_f3 | ~l_zcl_3 ), axiom, decoration(clause(left))).
+res(66_9, 66_10, 29_0, l_f3; l_f3; l_f3, []).
+cnf(26_0, ( ~r_f3_p | r_f2_p | ~r_p0 ), axiom, decoration(clause(right))).
+res(66_8, 66_9, 26_0, r_f3_p; r_f3_p; r_f3_p, []).
+cnf(23_0, ( l_zcl_3 | ~l_f2 ), axiom, decoration(clause(left))).
+res(66_7, 66_8, 23_0, l_zcl_3; l_zcl_3; l_zcl_3, []).
+cnf(20_0, ( ~r_f2_p | r_f1_p | ~r_p0 ), axiom, decoration(clause(right))).
+res(66_6, 66_7, 20_0, r_f2_p; r_f2_p; r_f2_p, []).
+cnf(17_0, ( l_f2 | ~l_zcl_4 ), axiom, decoration(clause(left))).
+res(66_5, 66_6, 17_0, l_f2; l_f2; l_f2, []).
+cnf(14_0, ( ~r_f1_p | ~r_p0 ), axiom, decoration(clause(right))).
+res(66_4, 66_5, 14_0, r_f1_p; r_f1_p; r_f1_p, []).
+cnf(11_0, ( l_zcl_4 | ~l_f1 ), axiom, decoration(clause(left))).
+res(66_3, 66_4, 11_0, l_zcl_4; l_zcl_4; l_zcl_4, []).
+res(66_2, 66_3, 8_0, r_p0; r_p0; r_p0, []).
+cnf(5_0, ( l_f1 | ~l_zcl_5 ), axiom, decoration(clause(left))).
+res(66_1, 66_2, 5_0, l_f1; l_f1; l_f1, []).
+cnf(3_0, ( l_p0 | ~l_zcl_5 ), axiom, decoration(clause(left))).
+res(66_0, 66_1, 3_0, l_p0; l_p0; l_p0, []).
+res(240_0, 240_1, 66_0, l_zcl_5; l_zcl_5; l_zcl_5, []).
+res(243_5, 243_6, 240_0, r_p0; r_p0; r_p0, []).
+res(243_4, 243_5, 78_0, l_f13; l_f13; l_f13, []).
+res(243_3, 243_4, 75_0, l_zcl_18; l_zcl_18; l_zcl_18, []).
+res(243_2, 243_3, 72_0, l_f6; l_f6; l_f6, []).
+res(243_1, 243_2, 69_0, l_f0; l_f0; l_f0, []).
+res(243_0, 243_1, 66_0, l_zcl_5; l_zcl_5; l_zcl_5, []).

@@ -1,0 +1,1353 @@
+%%%%%%%%%%%%%%%%%%%%% Target reformulation: ((~p26 & (~p27 & (~p28 & (p29 & p25)))) | ((~p21 | (p22 | (p23 | (p24 | p20)))) & ((p16 & (p17 & (p18 & (p19 & p15)))) | ((~p11 | (p12 | (~p13 | (p14 | p10)))) & ((~p6 & (~p7 & (~p8 & (~p9 & p5)))) | (~p1 & (p2 & (p3 & (~p4 & ~p0))))))))) %%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%% Original query %%%%%%%%%%%%%%%%%%%%%
+%(exists[]Q)
+cnf(l_axiom0,axiom,(q)) .
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%% Original axioms %%%%%%%%%%%%%%%%%%%%%
+
+
+%Non-clausified dependency
+%(forall[](f3 --> (p29 & p25)))
+%------------------------Clausification start------------------------%
+%~zcl_18 | p29
+cnf(l_axiom1,axiom,(~zcl_18 | p29)) .
+
+%~zcl_18 | p25
+cnf(l_axiom2,axiom,(~zcl_18 | p25)) .
+
+%~p29 | ~p25 | zcl_18
+cnf(l_axiom3,axiom,(~p29 | ~p25 | zcl_18)) .
+
+%~f3 | zcl_18
+cnf(l_axiom4,axiom,(~f3 | zcl_18)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[]((p29 & p25) --> f3_p))
+%------------------------Clausification start------------------------%
+%~p29 | ~p25 | f3_p
+cnf(l_axiom5,axiom,(~p29 | ~p25 | f3_p)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[](f2 --> (~p28 & f3)))
+%------------------------Clausification start------------------------%
+%~zcl_19 | p28
+cnf(l_axiom6,axiom,(~zcl_19 | p28)) .
+
+%~zcl_19 | f3
+cnf(l_axiom7,axiom,(~zcl_19 | f3)) .
+
+%~p28 | ~f3 | zcl_19
+cnf(l_axiom8,axiom,(~p28 | ~f3 | zcl_19)) .
+
+%~f2 | zcl_19
+cnf(l_axiom9,axiom,(~f2 | zcl_19)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[]((~p28 & f3_p) --> f2_p))
+%------------------------Clausification start------------------------%
+%~p28 | ~f3_p | f2_p
+cnf(l_axiom10,axiom,(~p28 | ~f3_p | f2_p)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[](f1 --> (~p27 & f2)))
+%------------------------Clausification start------------------------%
+%~zcl_20 | p27
+cnf(l_axiom11,axiom,(~zcl_20 | p27)) .
+
+%~zcl_20 | f2
+cnf(l_axiom12,axiom,(~zcl_20 | f2)) .
+
+%~p27 | ~f2 | zcl_20
+cnf(l_axiom13,axiom,(~p27 | ~f2 | zcl_20)) .
+
+%~f1 | zcl_20
+cnf(l_axiom14,axiom,(~f1 | zcl_20)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[]((~p27 & f2_p) --> f1_p))
+%------------------------Clausification start------------------------%
+%~p27 | ~f2_p | f1_p
+cnf(l_axiom15,axiom,(~p27 | ~f2_p | f1_p)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[](f0 --> (~p26 & f1)))
+%------------------------Clausification start------------------------%
+%~zcl_21 | p26
+cnf(l_axiom16,axiom,(~zcl_21 | p26)) .
+
+%~zcl_21 | f1
+cnf(l_axiom17,axiom,(~zcl_21 | f1)) .
+
+%~p26 | ~f1 | zcl_21
+cnf(l_axiom18,axiom,(~p26 | ~f1 | zcl_21)) .
+
+%~f0 | zcl_21
+cnf(l_axiom19,axiom,(~f0 | zcl_21)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[]((~p26 & f1_p) --> f0_p))
+%------------------------Clausification start------------------------%
+%~p26 | ~f1_p | f0_p
+cnf(l_axiom20,axiom,(~p26 | ~f1_p | f0_p)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[](f8 --> (p24 | p20)))
+%------------------------Clausification start------------------------%
+%~f8 | p24 | p20
+cnf(l_axiom21,axiom,(~f8 | p24 | p20)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[]((p24 | p20) --> f8_p))
+%------------------------Clausification start------------------------%
+%~p24 | f8_p
+cnf(l_axiom22,axiom,(~p24 | f8_p)) .
+
+%~p20 | f8_p
+cnf(l_axiom23,axiom,(~p20 | f8_p)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[](f7 --> (p23 | f8)))
+%------------------------Clausification start------------------------%
+%~f7 | p23 | f8
+cnf(l_axiom24,axiom,(~f7 | p23 | f8)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[]((p23 | f8_p) --> f7_p))
+%------------------------Clausification start------------------------%
+%~p23 | f7_p
+cnf(l_axiom25,axiom,(~p23 | f7_p)) .
+
+%~f8_p | f7_p
+cnf(l_axiom26,axiom,(~f8_p | f7_p)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[](f6 --> (p22 | f7)))
+%------------------------Clausification start------------------------%
+%~f6 | p22 | f7
+cnf(l_axiom27,axiom,(~f6 | p22 | f7)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[]((p22 | f7_p) --> f6_p))
+%------------------------Clausification start------------------------%
+%~p22 | f6_p
+cnf(l_axiom28,axiom,(~p22 | f6_p)) .
+
+%~f7_p | f6_p
+cnf(l_axiom29,axiom,(~f7_p | f6_p)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[](f5 --> (~p21 | f6)))
+%------------------------Clausification start------------------------%
+%~f5 | p21 | f6
+cnf(l_axiom30,axiom,(~f5 | p21 | f6)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[]((~p21 | f6_p) --> f5_p))
+%------------------------Clausification start------------------------%
+%~p21 | f5_p
+cnf(l_axiom31,axiom,(~p21 | f5_p)) .
+
+%~f6_p | f5_p
+cnf(l_axiom32,axiom,(~f6_p | f5_p)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[](f13 --> (p19 & p15)))
+%------------------------Clausification start------------------------%
+%~zcl_22 | p19
+cnf(l_axiom33,axiom,(~zcl_22 | p19)) .
+
+%~zcl_22 | p15
+cnf(l_axiom34,axiom,(~zcl_22 | p15)) .
+
+%~p19 | ~p15 | zcl_22
+cnf(l_axiom35,axiom,(~p19 | ~p15 | zcl_22)) .
+
+%~f13 | zcl_22
+cnf(l_axiom36,axiom,(~f13 | zcl_22)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[]((p19 & p15) --> f13_p))
+%------------------------Clausification start------------------------%
+%~p19 | ~p15 | f13_p
+cnf(l_axiom37,axiom,(~p19 | ~p15 | f13_p)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[](f12 --> (p18 & f13)))
+%------------------------Clausification start------------------------%
+%~zcl_23 | p18
+cnf(l_axiom38,axiom,(~zcl_23 | p18)) .
+
+%~zcl_23 | f13
+cnf(l_axiom39,axiom,(~zcl_23 | f13)) .
+
+%~p18 | ~f13 | zcl_23
+cnf(l_axiom40,axiom,(~p18 | ~f13 | zcl_23)) .
+
+%~f12 | zcl_23
+cnf(l_axiom41,axiom,(~f12 | zcl_23)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[]((p18 & f13_p) --> f12_p))
+%------------------------Clausification start------------------------%
+%~p18 | ~f13_p | f12_p
+cnf(l_axiom42,axiom,(~p18 | ~f13_p | f12_p)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[](f11 --> (p17 & f12)))
+%------------------------Clausification start------------------------%
+%~zcl_24 | p17
+cnf(l_axiom43,axiom,(~zcl_24 | p17)) .
+
+%~zcl_24 | f12
+cnf(l_axiom44,axiom,(~zcl_24 | f12)) .
+
+%~p17 | ~f12 | zcl_24
+cnf(l_axiom45,axiom,(~p17 | ~f12 | zcl_24)) .
+
+%~f11 | zcl_24
+cnf(l_axiom46,axiom,(~f11 | zcl_24)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[]((p17 & f12_p) --> f11_p))
+%------------------------Clausification start------------------------%
+%~p17 | ~f12_p | f11_p
+cnf(l_axiom47,axiom,(~p17 | ~f12_p | f11_p)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[](f10 --> (p16 & f11)))
+%------------------------Clausification start------------------------%
+%~zcl_25 | p16
+cnf(l_axiom48,axiom,(~zcl_25 | p16)) .
+
+%~zcl_25 | f11
+cnf(l_axiom49,axiom,(~zcl_25 | f11)) .
+
+%~p16 | ~f11 | zcl_25
+cnf(l_axiom50,axiom,(~p16 | ~f11 | zcl_25)) .
+
+%~f10 | zcl_25
+cnf(l_axiom51,axiom,(~f10 | zcl_25)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[]((p16 & f11_p) --> f10_p))
+%------------------------Clausification start------------------------%
+%~p16 | ~f11_p | f10_p
+cnf(l_axiom52,axiom,(~p16 | ~f11_p | f10_p)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[](f18 --> (p14 | p10)))
+%------------------------Clausification start------------------------%
+%~f18 | p14 | p10
+cnf(l_axiom53,axiom,(~f18 | p14 | p10)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[]((p14 | p10) --> f18_p))
+%------------------------Clausification start------------------------%
+%~p14 | f18_p
+cnf(l_axiom54,axiom,(~p14 | f18_p)) .
+
+%~p10 | f18_p
+cnf(l_axiom55,axiom,(~p10 | f18_p)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[](f17 --> (~p13 | f18)))
+%------------------------Clausification start------------------------%
+%~f17 | p13 | f18
+cnf(l_axiom56,axiom,(~f17 | p13 | f18)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[]((~p13 | f18_p) --> f17_p))
+%------------------------Clausification start------------------------%
+%~p13 | f17_p
+cnf(l_axiom57,axiom,(~p13 | f17_p)) .
+
+%~f18_p | f17_p
+cnf(l_axiom58,axiom,(~f18_p | f17_p)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[](f16 --> (p12 | f17)))
+%------------------------Clausification start------------------------%
+%~f16 | p12 | f17
+cnf(l_axiom59,axiom,(~f16 | p12 | f17)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[]((p12 | f17_p) --> f16_p))
+%------------------------Clausification start------------------------%
+%~p12 | f16_p
+cnf(l_axiom60,axiom,(~p12 | f16_p)) .
+
+%~f17_p | f16_p
+cnf(l_axiom61,axiom,(~f17_p | f16_p)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[](f15 --> (~p11 | f16)))
+%------------------------Clausification start------------------------%
+%~f15 | p11 | f16
+cnf(l_axiom62,axiom,(~f15 | p11 | f16)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[]((~p11 | f16_p) --> f15_p))
+%------------------------Clausification start------------------------%
+%~p11 | f15_p
+cnf(l_axiom63,axiom,(~p11 | f15_p)) .
+
+%~f16_p | f15_p
+cnf(l_axiom64,axiom,(~f16_p | f15_p)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[](f23 --> (~p9 & p5)))
+%------------------------Clausification start------------------------%
+%~zcl_26 | p9
+cnf(l_axiom65,axiom,(~zcl_26 | p9)) .
+
+%~zcl_26 | p5
+cnf(l_axiom66,axiom,(~zcl_26 | p5)) .
+
+%~p9 | ~p5 | zcl_26
+cnf(l_axiom67,axiom,(~p9 | ~p5 | zcl_26)) .
+
+%~f23 | zcl_26
+cnf(l_axiom68,axiom,(~f23 | zcl_26)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[]((~p9 & p5) --> f23_p))
+%------------------------Clausification start------------------------%
+%~p9 | ~p5 | f23_p
+cnf(l_axiom69,axiom,(~p9 | ~p5 | f23_p)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[](f22 --> (~p8 & f23)))
+%------------------------Clausification start------------------------%
+%~zcl_27 | p8
+cnf(l_axiom70,axiom,(~zcl_27 | p8)) .
+
+%~zcl_27 | f23
+cnf(l_axiom71,axiom,(~zcl_27 | f23)) .
+
+%~p8 | ~f23 | zcl_27
+cnf(l_axiom72,axiom,(~p8 | ~f23 | zcl_27)) .
+
+%~f22 | zcl_27
+cnf(l_axiom73,axiom,(~f22 | zcl_27)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[]((~p8 & f23_p) --> f22_p))
+%------------------------Clausification start------------------------%
+%~p8 | ~f23_p | f22_p
+cnf(l_axiom74,axiom,(~p8 | ~f23_p | f22_p)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[](f21 --> (~p7 & f22)))
+%------------------------Clausification start------------------------%
+%~zcl_28 | p7
+cnf(l_axiom75,axiom,(~zcl_28 | p7)) .
+
+%~zcl_28 | f22
+cnf(l_axiom76,axiom,(~zcl_28 | f22)) .
+
+%~p7 | ~f22 | zcl_28
+cnf(l_axiom77,axiom,(~p7 | ~f22 | zcl_28)) .
+
+%~f21 | zcl_28
+cnf(l_axiom78,axiom,(~f21 | zcl_28)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[]((~p7 & f22_p) --> f21_p))
+%------------------------Clausification start------------------------%
+%~p7 | ~f22_p | f21_p
+cnf(l_axiom79,axiom,(~p7 | ~f22_p | f21_p)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[](f20 --> (~p6 & f21)))
+%------------------------Clausification start------------------------%
+%~zcl_29 | p6
+cnf(l_axiom80,axiom,(~zcl_29 | p6)) .
+
+%~zcl_29 | f21
+cnf(l_axiom81,axiom,(~zcl_29 | f21)) .
+
+%~p6 | ~f21 | zcl_29
+cnf(l_axiom82,axiom,(~p6 | ~f21 | zcl_29)) .
+
+%~f20 | zcl_29
+cnf(l_axiom83,axiom,(~f20 | zcl_29)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[]((~p6 & f21_p) --> f20_p))
+%------------------------Clausification start------------------------%
+%~p6 | ~f21_p | f20_p
+cnf(l_axiom84,axiom,(~p6 | ~f21_p | f20_p)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[](f27 --> (~p4 & ~p0)))
+%------------------------Clausification start------------------------%
+%~zcl_30 | p4
+cnf(l_axiom85,axiom,(~zcl_30 | p4)) .
+
+%~zcl_30 | p0
+cnf(l_axiom86,axiom,(~zcl_30 | p0)) .
+
+%~p4 | ~p0 | zcl_30
+cnf(l_axiom87,axiom,(~p4 | ~p0 | zcl_30)) .
+
+%~f27 | zcl_30
+cnf(l_axiom88,axiom,(~f27 | zcl_30)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[]((~p4 & ~p0) --> f27_p))
+%------------------------Clausification start------------------------%
+%~p4 | ~p0 | f27_p
+cnf(l_axiom89,axiom,(~p4 | ~p0 | f27_p)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[](f26 --> (p3 & f27)))
+%------------------------Clausification start------------------------%
+%~zcl_31 | p3
+cnf(l_axiom90,axiom,(~zcl_31 | p3)) .
+
+%~zcl_31 | f27
+cnf(l_axiom91,axiom,(~zcl_31 | f27)) .
+
+%~p3 | ~f27 | zcl_31
+cnf(l_axiom92,axiom,(~p3 | ~f27 | zcl_31)) .
+
+%~f26 | zcl_31
+cnf(l_axiom93,axiom,(~f26 | zcl_31)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[]((p3 & f27_p) --> f26_p))
+%------------------------Clausification start------------------------%
+%~p3 | ~f27_p | f26_p
+cnf(l_axiom94,axiom,(~p3 | ~f27_p | f26_p)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[](f25 --> (p2 & f26)))
+%------------------------Clausification start------------------------%
+%~zcl_32 | p2
+cnf(l_axiom95,axiom,(~zcl_32 | p2)) .
+
+%~zcl_32 | f26
+cnf(l_axiom96,axiom,(~zcl_32 | f26)) .
+
+%~p2 | ~f26 | zcl_32
+cnf(l_axiom97,axiom,(~p2 | ~f26 | zcl_32)) .
+
+%~f25 | zcl_32
+cnf(l_axiom98,axiom,(~f25 | zcl_32)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[]((p2 & f26_p) --> f25_p))
+%------------------------Clausification start------------------------%
+%~p2 | ~f26_p | f25_p
+cnf(l_axiom99,axiom,(~p2 | ~f26_p | f25_p)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[](f24 --> (~p1 & f25)))
+%------------------------Clausification start------------------------%
+%~zcl_33 | p1
+cnf(l_axiom100,axiom,(~zcl_33 | p1)) .
+
+%~zcl_33 | f25
+cnf(l_axiom101,axiom,(~zcl_33 | f25)) .
+
+%~p1 | ~f25 | zcl_33
+cnf(l_axiom102,axiom,(~p1 | ~f25 | zcl_33)) .
+
+%~f24 | zcl_33
+cnf(l_axiom103,axiom,(~f24 | zcl_33)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[]((~p1 & f25_p) --> f24_p))
+%------------------------Clausification start------------------------%
+%~p1 | ~f25_p | f24_p
+cnf(l_axiom104,axiom,(~p1 | ~f25_p | f24_p)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[](f19 --> (f20 | f24)))
+%------------------------Clausification start------------------------%
+%~f19 | f20 | f24
+cnf(l_axiom105,axiom,(~f19 | f20 | f24)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[]((f20_p | f24_p) --> f19_p))
+%------------------------Clausification start------------------------%
+%~f20_p | f19_p
+cnf(l_axiom106,axiom,(~f20_p | f19_p)) .
+
+%~f24_p | f19_p
+cnf(l_axiom107,axiom,(~f24_p | f19_p)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[](f14 --> (f15 & f19)))
+%------------------------Clausification start------------------------%
+%~zcl_34 | f15
+cnf(l_axiom108,axiom,(~zcl_34 | f15)) .
+
+%~zcl_34 | f19
+cnf(l_axiom109,axiom,(~zcl_34 | f19)) .
+
+%~f15 | ~f19 | zcl_34
+cnf(l_axiom110,axiom,(~f15 | ~f19 | zcl_34)) .
+
+%~f14 | zcl_34
+cnf(l_axiom111,axiom,(~f14 | zcl_34)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[]((f15_p & f19_p) --> f14_p))
+%------------------------Clausification start------------------------%
+%~f15_p | ~f19_p | f14_p
+cnf(l_axiom112,axiom,(~f15_p | ~f19_p | f14_p)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[](f9 --> (f10 | f14)))
+%------------------------Clausification start------------------------%
+%~f9 | f10 | f14
+cnf(l_axiom113,axiom,(~f9 | f10 | f14)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[]((f10_p | f14_p) --> f9_p))
+%------------------------Clausification start------------------------%
+%~f10_p | f9_p
+cnf(l_axiom114,axiom,(~f10_p | f9_p)) .
+
+%~f14_p | f9_p
+cnf(l_axiom115,axiom,(~f14_p | f9_p)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[](f4 --> (f5 & f9)))
+%------------------------Clausification start------------------------%
+%~zcl_35 | f5
+cnf(l_axiom116,axiom,(~zcl_35 | f5)) .
+
+%~zcl_35 | f9
+cnf(l_axiom117,axiom,(~zcl_35 | f9)) .
+
+%~f5 | ~f9 | zcl_35
+cnf(l_axiom118,axiom,(~f5 | ~f9 | zcl_35)) .
+
+%~f4 | zcl_35
+cnf(l_axiom119,axiom,(~f4 | zcl_35)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[]((f5_p & f9_p) --> f4_p))
+%------------------------Clausification start------------------------%
+%~f5_p | ~f9_p | f4_p
+cnf(l_axiom120,axiom,(~f5_p | ~f9_p | f4_p)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[](Q --> (f0 | f4)))
+%------------------------Clausification start------------------------%
+%~Q | f0 | f4
+cnf(l_axiom121,axiom,(~q | f0 | f4)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[]((f0_p | f4_p) --> Q))
+%------------------------Clausification start------------------------%
+%~f0_p | Q
+cnf(l_axiom122,axiom,(~f0_p | q)) .
+
+%~f4_p | Q
+cnf(l_axiom123,axiom,(~f4_p | q)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%%%%%%%%%%%%%%%%%%%%% Transfering axioms %%%%%%%%%%%%%%%%%%%%%
+
+
+%~p26 | acc_p26
+cnf(r_axiom124,axiom,(~p26 | acc_p26)) .
+
+
+%~p27 | acc_p27
+cnf(r_axiom125,axiom,(~p27 | acc_p27)) .
+
+
+%~p28 | acc_p28
+cnf(r_axiom126,axiom,(~p28 | acc_p28)) .
+
+
+%~p29 | acc_p29
+cnf(r_axiom127,axiom,(~p29 | acc_p29)) .
+
+
+%~p25 | acc_p25
+cnf(r_axiom128,axiom,(~p25 | acc_p25)) .
+
+
+%~p21 | acc_p21
+cnf(r_axiom129,axiom,(~p21 | acc_p21)) .
+
+
+%~p22 | acc_p22
+cnf(r_axiom130,axiom,(~p22 | acc_p22)) .
+
+
+%~p23 | acc_p23
+cnf(r_axiom131,axiom,(~p23 | acc_p23)) .
+
+
+%~p24 | acc_p24
+cnf(r_axiom132,axiom,(~p24 | acc_p24)) .
+
+
+%~p20 | acc_p20
+cnf(r_axiom133,axiom,(~p20 | acc_p20)) .
+
+
+%~p16 | acc_p16
+cnf(r_axiom134,axiom,(~p16 | acc_p16)) .
+
+
+%~p17 | acc_p17
+cnf(r_axiom135,axiom,(~p17 | acc_p17)) .
+
+
+%~p18 | acc_p18
+cnf(r_axiom136,axiom,(~p18 | acc_p18)) .
+
+
+%~p19 | acc_p19
+cnf(r_axiom137,axiom,(~p19 | acc_p19)) .
+
+
+%~p15 | acc_p15
+cnf(r_axiom138,axiom,(~p15 | acc_p15)) .
+
+
+%~p11 | acc_p11
+cnf(r_axiom139,axiom,(~p11 | acc_p11)) .
+
+
+%~p12 | acc_p12
+cnf(r_axiom140,axiom,(~p12 | acc_p12)) .
+
+
+%~p13 | acc_p13
+cnf(r_axiom141,axiom,(~p13 | acc_p13)) .
+
+
+%~p14 | acc_p14
+cnf(r_axiom142,axiom,(~p14 | acc_p14)) .
+
+
+%~p10 | acc_p10
+cnf(r_axiom143,axiom,(~p10 | acc_p10)) .
+
+
+%~p6 | acc_p6
+cnf(r_axiom144,axiom,(~p6 | acc_p6)) .
+
+
+%~p7 | acc_p7
+cnf(r_axiom145,axiom,(~p7 | acc_p7)) .
+
+
+%~p8 | acc_p8
+cnf(r_axiom146,axiom,(~p8 | acc_p8)) .
+
+
+%~p9 | acc_p9
+cnf(r_axiom147,axiom,(~p9 | acc_p9)) .
+
+
+%~p5 | acc_p5
+cnf(r_axiom148,axiom,(~p5 | acc_p5)) .
+
+
+%~p1 | acc_p1
+cnf(r_axiom149,axiom,(~p1 | acc_p1)) .
+
+
+%~p2 | acc_p2
+cnf(r_axiom150,axiom,(~p2 | acc_p2)) .
+
+
+%~p3 | acc_p3
+cnf(r_axiom151,axiom,(~p3 | acc_p3)) .
+
+
+%~p4 | acc_p4
+cnf(r_axiom152,axiom,(~p4 | acc_p4)) .
+
+
+%~p0 | acc_p0
+cnf(r_axiom153,axiom,(~p0 | acc_p0)) .
+
+
+%%%%%%%%%%%%%%%%%%%%% Copy of the axioms %%%%%%%%%%%%%%%%%%%%%
+
+
+%~acc_zcl_18 | acc_p29
+cnf(r_axiom154,axiom,(~acc_zcl_18 | acc_p29)) .
+
+
+%~acc_zcl_18 | acc_p25
+cnf(r_axiom155,axiom,(~acc_zcl_18 | acc_p25)) .
+
+
+%~acc_p29 | ~acc_p25 | acc_zcl_18
+cnf(r_axiom156,axiom,(~acc_p29 | ~acc_p25 | acc_zcl_18)) .
+
+
+%~acc_f3 | acc_zcl_18
+cnf(r_axiom157,axiom,(~acc_f3 | acc_zcl_18)) .
+
+
+%~acc_p29 | ~acc_p25 | acc_f3_p
+cnf(r_axiom158,axiom,(~acc_p29 | ~acc_p25 | acc_f3_p)) .
+
+
+%~acc_zcl_19 | acc_p28
+cnf(r_axiom159,axiom,(~acc_zcl_19 | acc_p28)) .
+
+
+%~acc_zcl_19 | acc_f3
+cnf(r_axiom160,axiom,(~acc_zcl_19 | acc_f3)) .
+
+
+%~acc_p28 | ~acc_f3 | acc_zcl_19
+cnf(r_axiom161,axiom,(~acc_p28 | ~acc_f3 | acc_zcl_19)) .
+
+
+%~acc_f2 | acc_zcl_19
+cnf(r_axiom162,axiom,(~acc_f2 | acc_zcl_19)) .
+
+
+%~acc_p28 | ~acc_f3_p | acc_f2_p
+cnf(r_axiom163,axiom,(~acc_p28 | ~acc_f3_p | acc_f2_p)) .
+
+
+%~acc_zcl_20 | acc_p27
+cnf(r_axiom164,axiom,(~acc_zcl_20 | acc_p27)) .
+
+
+%~acc_zcl_20 | acc_f2
+cnf(r_axiom165,axiom,(~acc_zcl_20 | acc_f2)) .
+
+
+%~acc_p27 | ~acc_f2 | acc_zcl_20
+cnf(r_axiom166,axiom,(~acc_p27 | ~acc_f2 | acc_zcl_20)) .
+
+
+%~acc_f1 | acc_zcl_20
+cnf(r_axiom167,axiom,(~acc_f1 | acc_zcl_20)) .
+
+
+%~acc_p27 | ~acc_f2_p | acc_f1_p
+cnf(r_axiom168,axiom,(~acc_p27 | ~acc_f2_p | acc_f1_p)) .
+
+
+%~acc_zcl_21 | acc_p26
+cnf(r_axiom169,axiom,(~acc_zcl_21 | acc_p26)) .
+
+
+%~acc_zcl_21 | acc_f1
+cnf(r_axiom170,axiom,(~acc_zcl_21 | acc_f1)) .
+
+
+%~acc_p26 | ~acc_f1 | acc_zcl_21
+cnf(r_axiom171,axiom,(~acc_p26 | ~acc_f1 | acc_zcl_21)) .
+
+
+%~acc_f0 | acc_zcl_21
+cnf(r_axiom172,axiom,(~acc_f0 | acc_zcl_21)) .
+
+
+%~acc_p26 | ~acc_f1_p | acc_f0_p
+cnf(r_axiom173,axiom,(~acc_p26 | ~acc_f1_p | acc_f0_p)) .
+
+
+%~acc_f8 | acc_p24 | acc_p20
+cnf(r_axiom174,axiom,(~acc_f8 | acc_p24 | acc_p20)) .
+
+
+%~acc_p24 | acc_f8_p
+cnf(r_axiom175,axiom,(~acc_p24 | acc_f8_p)) .
+
+
+%~acc_p20 | acc_f8_p
+cnf(r_axiom176,axiom,(~acc_p20 | acc_f8_p)) .
+
+
+%~acc_f7 | acc_p23 | acc_f8
+cnf(r_axiom177,axiom,(~acc_f7 | acc_p23 | acc_f8)) .
+
+
+%~acc_p23 | acc_f7_p
+cnf(r_axiom178,axiom,(~acc_p23 | acc_f7_p)) .
+
+
+%~acc_f8_p | acc_f7_p
+cnf(r_axiom179,axiom,(~acc_f8_p | acc_f7_p)) .
+
+
+%~acc_f6 | acc_p22 | acc_f7
+cnf(r_axiom180,axiom,(~acc_f6 | acc_p22 | acc_f7)) .
+
+
+%~acc_p22 | acc_f6_p
+cnf(r_axiom181,axiom,(~acc_p22 | acc_f6_p)) .
+
+
+%~acc_f7_p | acc_f6_p
+cnf(r_axiom182,axiom,(~acc_f7_p | acc_f6_p)) .
+
+
+%~acc_f5 | acc_p21 | acc_f6
+cnf(r_axiom183,axiom,(~acc_f5 | acc_p21 | acc_f6)) .
+
+
+%~acc_p21 | acc_f5_p
+cnf(r_axiom184,axiom,(~acc_p21 | acc_f5_p)) .
+
+
+%~acc_f6_p | acc_f5_p
+cnf(r_axiom185,axiom,(~acc_f6_p | acc_f5_p)) .
+
+
+%~acc_zcl_22 | acc_p19
+cnf(r_axiom186,axiom,(~acc_zcl_22 | acc_p19)) .
+
+
+%~acc_zcl_22 | acc_p15
+cnf(r_axiom187,axiom,(~acc_zcl_22 | acc_p15)) .
+
+
+%~acc_p19 | ~acc_p15 | acc_zcl_22
+cnf(r_axiom188,axiom,(~acc_p19 | ~acc_p15 | acc_zcl_22)) .
+
+
+%~acc_f13 | acc_zcl_22
+cnf(r_axiom189,axiom,(~acc_f13 | acc_zcl_22)) .
+
+
+%~acc_p19 | ~acc_p15 | acc_f13_p
+cnf(r_axiom190,axiom,(~acc_p19 | ~acc_p15 | acc_f13_p)) .
+
+
+%~acc_zcl_23 | acc_p18
+cnf(r_axiom191,axiom,(~acc_zcl_23 | acc_p18)) .
+
+
+%~acc_zcl_23 | acc_f13
+cnf(r_axiom192,axiom,(~acc_zcl_23 | acc_f13)) .
+
+
+%~acc_p18 | ~acc_f13 | acc_zcl_23
+cnf(r_axiom193,axiom,(~acc_p18 | ~acc_f13 | acc_zcl_23)) .
+
+
+%~acc_f12 | acc_zcl_23
+cnf(r_axiom194,axiom,(~acc_f12 | acc_zcl_23)) .
+
+
+%~acc_p18 | ~acc_f13_p | acc_f12_p
+cnf(r_axiom195,axiom,(~acc_p18 | ~acc_f13_p | acc_f12_p)) .
+
+
+%~acc_zcl_24 | acc_p17
+cnf(r_axiom196,axiom,(~acc_zcl_24 | acc_p17)) .
+
+
+%~acc_zcl_24 | acc_f12
+cnf(r_axiom197,axiom,(~acc_zcl_24 | acc_f12)) .
+
+
+%~acc_p17 | ~acc_f12 | acc_zcl_24
+cnf(r_axiom198,axiom,(~acc_p17 | ~acc_f12 | acc_zcl_24)) .
+
+
+%~acc_f11 | acc_zcl_24
+cnf(r_axiom199,axiom,(~acc_f11 | acc_zcl_24)) .
+
+
+%~acc_p17 | ~acc_f12_p | acc_f11_p
+cnf(r_axiom200,axiom,(~acc_p17 | ~acc_f12_p | acc_f11_p)) .
+
+
+%~acc_zcl_25 | acc_p16
+cnf(r_axiom201,axiom,(~acc_zcl_25 | acc_p16)) .
+
+
+%~acc_zcl_25 | acc_f11
+cnf(r_axiom202,axiom,(~acc_zcl_25 | acc_f11)) .
+
+
+%~acc_p16 | ~acc_f11 | acc_zcl_25
+cnf(r_axiom203,axiom,(~acc_p16 | ~acc_f11 | acc_zcl_25)) .
+
+
+%~acc_f10 | acc_zcl_25
+cnf(r_axiom204,axiom,(~acc_f10 | acc_zcl_25)) .
+
+
+%~acc_p16 | ~acc_f11_p | acc_f10_p
+cnf(r_axiom205,axiom,(~acc_p16 | ~acc_f11_p | acc_f10_p)) .
+
+
+%~acc_f18 | acc_p14 | acc_p10
+cnf(r_axiom206,axiom,(~acc_f18 | acc_p14 | acc_p10)) .
+
+
+%~acc_p14 | acc_f18_p
+cnf(r_axiom207,axiom,(~acc_p14 | acc_f18_p)) .
+
+
+%~acc_p10 | acc_f18_p
+cnf(r_axiom208,axiom,(~acc_p10 | acc_f18_p)) .
+
+
+%~acc_f17 | acc_p13 | acc_f18
+cnf(r_axiom209,axiom,(~acc_f17 | acc_p13 | acc_f18)) .
+
+
+%~acc_p13 | acc_f17_p
+cnf(r_axiom210,axiom,(~acc_p13 | acc_f17_p)) .
+
+
+%~acc_f18_p | acc_f17_p
+cnf(r_axiom211,axiom,(~acc_f18_p | acc_f17_p)) .
+
+
+%~acc_f16 | acc_p12 | acc_f17
+cnf(r_axiom212,axiom,(~acc_f16 | acc_p12 | acc_f17)) .
+
+
+%~acc_p12 | acc_f16_p
+cnf(r_axiom213,axiom,(~acc_p12 | acc_f16_p)) .
+
+
+%~acc_f17_p | acc_f16_p
+cnf(r_axiom214,axiom,(~acc_f17_p | acc_f16_p)) .
+
+
+%~acc_f15 | acc_p11 | acc_f16
+cnf(r_axiom215,axiom,(~acc_f15 | acc_p11 | acc_f16)) .
+
+
+%~acc_p11 | acc_f15_p
+cnf(r_axiom216,axiom,(~acc_p11 | acc_f15_p)) .
+
+
+%~acc_f16_p | acc_f15_p
+cnf(r_axiom217,axiom,(~acc_f16_p | acc_f15_p)) .
+
+
+%~acc_zcl_26 | acc_p9
+cnf(r_axiom218,axiom,(~acc_zcl_26 | acc_p9)) .
+
+
+%~acc_zcl_26 | acc_p5
+cnf(r_axiom219,axiom,(~acc_zcl_26 | acc_p5)) .
+
+
+%~acc_p9 | ~acc_p5 | acc_zcl_26
+cnf(r_axiom220,axiom,(~acc_p9 | ~acc_p5 | acc_zcl_26)) .
+
+
+%~acc_f23 | acc_zcl_26
+cnf(r_axiom221,axiom,(~acc_f23 | acc_zcl_26)) .
+
+
+%~acc_p9 | ~acc_p5 | acc_f23_p
+cnf(r_axiom222,axiom,(~acc_p9 | ~acc_p5 | acc_f23_p)) .
+
+
+%~acc_zcl_27 | acc_p8
+cnf(r_axiom223,axiom,(~acc_zcl_27 | acc_p8)) .
+
+
+%~acc_zcl_27 | acc_f23
+cnf(r_axiom224,axiom,(~acc_zcl_27 | acc_f23)) .
+
+
+%~acc_p8 | ~acc_f23 | acc_zcl_27
+cnf(r_axiom225,axiom,(~acc_p8 | ~acc_f23 | acc_zcl_27)) .
+
+
+%~acc_f22 | acc_zcl_27
+cnf(r_axiom226,axiom,(~acc_f22 | acc_zcl_27)) .
+
+
+%~acc_p8 | ~acc_f23_p | acc_f22_p
+cnf(r_axiom227,axiom,(~acc_p8 | ~acc_f23_p | acc_f22_p)) .
+
+
+%~acc_zcl_28 | acc_p7
+cnf(r_axiom228,axiom,(~acc_zcl_28 | acc_p7)) .
+
+
+%~acc_zcl_28 | acc_f22
+cnf(r_axiom229,axiom,(~acc_zcl_28 | acc_f22)) .
+
+
+%~acc_p7 | ~acc_f22 | acc_zcl_28
+cnf(r_axiom230,axiom,(~acc_p7 | ~acc_f22 | acc_zcl_28)) .
+
+
+%~acc_f21 | acc_zcl_28
+cnf(r_axiom231,axiom,(~acc_f21 | acc_zcl_28)) .
+
+
+%~acc_p7 | ~acc_f22_p | acc_f21_p
+cnf(r_axiom232,axiom,(~acc_p7 | ~acc_f22_p | acc_f21_p)) .
+
+
+%~acc_zcl_29 | acc_p6
+cnf(r_axiom233,axiom,(~acc_zcl_29 | acc_p6)) .
+
+
+%~acc_zcl_29 | acc_f21
+cnf(r_axiom234,axiom,(~acc_zcl_29 | acc_f21)) .
+
+
+%~acc_p6 | ~acc_f21 | acc_zcl_29
+cnf(r_axiom235,axiom,(~acc_p6 | ~acc_f21 | acc_zcl_29)) .
+
+
+%~acc_f20 | acc_zcl_29
+cnf(r_axiom236,axiom,(~acc_f20 | acc_zcl_29)) .
+
+
+%~acc_p6 | ~acc_f21_p | acc_f20_p
+cnf(r_axiom237,axiom,(~acc_p6 | ~acc_f21_p | acc_f20_p)) .
+
+
+%~acc_zcl_30 | acc_p4
+cnf(r_axiom238,axiom,(~acc_zcl_30 | acc_p4)) .
+
+
+%~acc_zcl_30 | acc_p0
+cnf(r_axiom239,axiom,(~acc_zcl_30 | acc_p0)) .
+
+
+%~acc_p4 | ~acc_p0 | acc_zcl_30
+cnf(r_axiom240,axiom,(~acc_p4 | ~acc_p0 | acc_zcl_30)) .
+
+
+%~acc_f27 | acc_zcl_30
+cnf(r_axiom241,axiom,(~acc_f27 | acc_zcl_30)) .
+
+
+%~acc_p4 | ~acc_p0 | acc_f27_p
+cnf(r_axiom242,axiom,(~acc_p4 | ~acc_p0 | acc_f27_p)) .
+
+
+%~acc_zcl_31 | acc_p3
+cnf(r_axiom243,axiom,(~acc_zcl_31 | acc_p3)) .
+
+
+%~acc_zcl_31 | acc_f27
+cnf(r_axiom244,axiom,(~acc_zcl_31 | acc_f27)) .
+
+
+%~acc_p3 | ~acc_f27 | acc_zcl_31
+cnf(r_axiom245,axiom,(~acc_p3 | ~acc_f27 | acc_zcl_31)) .
+
+
+%~acc_f26 | acc_zcl_31
+cnf(r_axiom246,axiom,(~acc_f26 | acc_zcl_31)) .
+
+
+%~acc_p3 | ~acc_f27_p | acc_f26_p
+cnf(r_axiom247,axiom,(~acc_p3 | ~acc_f27_p | acc_f26_p)) .
+
+
+%~acc_zcl_32 | acc_p2
+cnf(r_axiom248,axiom,(~acc_zcl_32 | acc_p2)) .
+
+
+%~acc_zcl_32 | acc_f26
+cnf(r_axiom249,axiom,(~acc_zcl_32 | acc_f26)) .
+
+
+%~acc_p2 | ~acc_f26 | acc_zcl_32
+cnf(r_axiom250,axiom,(~acc_p2 | ~acc_f26 | acc_zcl_32)) .
+
+
+%~acc_f25 | acc_zcl_32
+cnf(r_axiom251,axiom,(~acc_f25 | acc_zcl_32)) .
+
+
+%~acc_p2 | ~acc_f26_p | acc_f25_p
+cnf(r_axiom252,axiom,(~acc_p2 | ~acc_f26_p | acc_f25_p)) .
+
+
+%~acc_zcl_33 | acc_p1
+cnf(r_axiom253,axiom,(~acc_zcl_33 | acc_p1)) .
+
+
+%~acc_zcl_33 | acc_f25
+cnf(r_axiom254,axiom,(~acc_zcl_33 | acc_f25)) .
+
+
+%~acc_p1 | ~acc_f25 | acc_zcl_33
+cnf(r_axiom255,axiom,(~acc_p1 | ~acc_f25 | acc_zcl_33)) .
+
+
+%~acc_f24 | acc_zcl_33
+cnf(r_axiom256,axiom,(~acc_f24 | acc_zcl_33)) .
+
+
+%~acc_p1 | ~acc_f25_p | acc_f24_p
+cnf(r_axiom257,axiom,(~acc_p1 | ~acc_f25_p | acc_f24_p)) .
+
+
+%~acc_f19 | acc_f20 | acc_f24
+cnf(r_axiom258,axiom,(~acc_f19 | acc_f20 | acc_f24)) .
+
+
+%~acc_f20_p | acc_f19_p
+cnf(r_axiom259,axiom,(~acc_f20_p | acc_f19_p)) .
+
+
+%~acc_f24_p | acc_f19_p
+cnf(r_axiom260,axiom,(~acc_f24_p | acc_f19_p)) .
+
+
+%~acc_zcl_34 | acc_f15
+cnf(r_axiom261,axiom,(~acc_zcl_34 | acc_f15)) .
+
+
+%~acc_zcl_34 | acc_f19
+cnf(r_axiom262,axiom,(~acc_zcl_34 | acc_f19)) .
+
+
+%~acc_f15 | ~acc_f19 | acc_zcl_34
+cnf(r_axiom263,axiom,(~acc_f15 | ~acc_f19 | acc_zcl_34)) .
+
+
+%~acc_f14 | acc_zcl_34
+cnf(r_axiom264,axiom,(~acc_f14 | acc_zcl_34)) .
+
+
+%~acc_f15_p | ~acc_f19_p | acc_f14_p
+cnf(r_axiom265,axiom,(~acc_f15_p | ~acc_f19_p | acc_f14_p)) .
+
+
+%~acc_f9 | acc_f10 | acc_f14
+cnf(r_axiom266,axiom,(~acc_f9 | acc_f10 | acc_f14)) .
+
+
+%~acc_f10_p | acc_f9_p
+cnf(r_axiom267,axiom,(~acc_f10_p | acc_f9_p)) .
+
+
+%~acc_f14_p | acc_f9_p
+cnf(r_axiom268,axiom,(~acc_f14_p | acc_f9_p)) .
+
+
+%~acc_zcl_35 | acc_f5
+cnf(r_axiom269,axiom,(~acc_zcl_35 | acc_f5)) .
+
+
+%~acc_zcl_35 | acc_f9
+cnf(r_axiom270,axiom,(~acc_zcl_35 | acc_f9)) .
+
+
+%~acc_f5 | ~acc_f9 | acc_zcl_35
+cnf(r_axiom271,axiom,(~acc_f5 | ~acc_f9 | acc_zcl_35)) .
+
+
+%~acc_f4 | acc_zcl_35
+cnf(r_axiom272,axiom,(~acc_f4 | acc_zcl_35)) .
+
+
+%~acc_f5_p | ~acc_f9_p | acc_f4_p
+cnf(r_axiom273,axiom,(~acc_f5_p | ~acc_f9_p | acc_f4_p)) .
+
+
+%~acc_Q | acc_f0 | acc_f4
+cnf(r_axiom274,axiom,(~acc_q | acc_f0 | acc_f4)) .
+
+
+%~acc_f0_p | acc_Q
+cnf(r_axiom275,axiom,(~acc_f0_p | acc_q)) .
+
+
+%~acc_f4_p | acc_Q
+cnf(r_axiom276,axiom,(~acc_f4_p | acc_q)) .
+
+
+%%%%%%%%%%%%%%%%%%%%% Negated copy of the query %%%%%%%%%%%%%%%%%%%%%
+%(exists[]acc_Q)
+cnf(r_negated_conjecture0,negated_conjecture,(~acc_q)) .
+
+

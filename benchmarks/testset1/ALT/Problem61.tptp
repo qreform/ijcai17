@@ -1,0 +1,335 @@
+%%%%%%%%%%%%%%%%%%%%% Target reformulation: ((p3 & p5) | ((p4 | p3) & ((p0 & p2) | (p1 & p0)))) %%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%% Original query %%%%%%%%%%%%%%%%%%%%%
+%(exists[]Q)
+cnf(l_axiom0,axiom,(q)) .
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%% Original axioms %%%%%%%%%%%%%%%%%%%%%
+
+
+%Non-clausified dependency
+%(forall[](f0 --> (p3 & p5)))
+%------------------------Clausification start------------------------%
+%~zcl_4 | p3
+cnf(l_axiom1,axiom,(~zcl_4 | p3)) .
+
+%~zcl_4 | p5
+cnf(l_axiom2,axiom,(~zcl_4 | p5)) .
+
+%~p3 | ~p5 | zcl_4
+cnf(l_axiom3,axiom,(~p3 | ~p5 | zcl_4)) .
+
+%~f0 | zcl_4
+cnf(l_axiom4,axiom,(~f0 | zcl_4)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[]((p3 & p5) --> f0_p))
+%------------------------Clausification start------------------------%
+%~p3 | ~p5 | f0_p
+cnf(l_axiom5,axiom,(~p3 | ~p5 | f0_p)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[](f2 --> (p4 | p3)))
+%------------------------Clausification start------------------------%
+%~f2 | p4 | p3
+cnf(l_axiom6,axiom,(~f2 | p4 | p3)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[]((p4 | p3) --> f2_p))
+%------------------------Clausification start------------------------%
+%~p4 | f2_p
+cnf(l_axiom7,axiom,(~p4 | f2_p)) .
+
+%~p3 | f2_p
+cnf(l_axiom8,axiom,(~p3 | f2_p)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[](f4 --> (p0 & p2)))
+%------------------------Clausification start------------------------%
+%~zcl_5 | p0
+cnf(l_axiom9,axiom,(~zcl_5 | p0)) .
+
+%~zcl_5 | p2
+cnf(l_axiom10,axiom,(~zcl_5 | p2)) .
+
+%~p0 | ~p2 | zcl_5
+cnf(l_axiom11,axiom,(~p0 | ~p2 | zcl_5)) .
+
+%~f4 | zcl_5
+cnf(l_axiom12,axiom,(~f4 | zcl_5)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[]((p0 & p2) --> f4_p))
+%------------------------Clausification start------------------------%
+%~p0 | ~p2 | f4_p
+cnf(l_axiom13,axiom,(~p0 | ~p2 | f4_p)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[](f5 --> (p1 & p0)))
+%------------------------Clausification start------------------------%
+%~zcl_6 | p1
+cnf(l_axiom14,axiom,(~zcl_6 | p1)) .
+
+%~zcl_6 | p0
+cnf(l_axiom15,axiom,(~zcl_6 | p0)) .
+
+%~p1 | ~p0 | zcl_6
+cnf(l_axiom16,axiom,(~p1 | ~p0 | zcl_6)) .
+
+%~f5 | zcl_6
+cnf(l_axiom17,axiom,(~f5 | zcl_6)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[]((p1 & p0) --> f5_p))
+%------------------------Clausification start------------------------%
+%~p1 | ~p0 | f5_p
+cnf(l_axiom18,axiom,(~p1 | ~p0 | f5_p)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[](f3 --> (f4 | f5)))
+%------------------------Clausification start------------------------%
+%~f3 | f4 | f5
+cnf(l_axiom19,axiom,(~f3 | f4 | f5)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[]((f4_p | f5_p) --> f3_p))
+%------------------------Clausification start------------------------%
+%~f4_p | f3_p
+cnf(l_axiom20,axiom,(~f4_p | f3_p)) .
+
+%~f5_p | f3_p
+cnf(l_axiom21,axiom,(~f5_p | f3_p)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[](f1 --> (f2 & f3)))
+%------------------------Clausification start------------------------%
+%~zcl_7 | f2
+cnf(l_axiom22,axiom,(~zcl_7 | f2)) .
+
+%~zcl_7 | f3
+cnf(l_axiom23,axiom,(~zcl_7 | f3)) .
+
+%~f2 | ~f3 | zcl_7
+cnf(l_axiom24,axiom,(~f2 | ~f3 | zcl_7)) .
+
+%~f1 | zcl_7
+cnf(l_axiom25,axiom,(~f1 | zcl_7)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[]((f2_p & f3_p) --> f1_p))
+%------------------------Clausification start------------------------%
+%~f2_p | ~f3_p | f1_p
+cnf(l_axiom26,axiom,(~f2_p | ~f3_p | f1_p)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[](Q --> (f0 | f1)))
+%------------------------Clausification start------------------------%
+%~Q | f0 | f1
+cnf(l_axiom27,axiom,(~q | f0 | f1)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%Non-clausified dependency
+%(forall[]((f0_p | f1_p) --> Q))
+%------------------------Clausification start------------------------%
+%~f0_p | Q
+cnf(l_axiom28,axiom,(~f0_p | q)) .
+
+%~f1_p | Q
+cnf(l_axiom29,axiom,(~f1_p | q)) .
+
+%------------------------Clausification end ------------------------%
+
+
+%%%%%%%%%%%%%%%%%%%%% Transfering axioms %%%%%%%%%%%%%%%%%%%%%
+
+
+%~p3 | acc_p3
+cnf(r_axiom30,axiom,(~p3 | acc_p3)) .
+
+
+%~p5 | acc_p5
+cnf(r_axiom31,axiom,(~p5 | acc_p5)) .
+
+
+%~p4 | acc_p4
+cnf(r_axiom32,axiom,(~p4 | acc_p4)) .
+
+
+%~p0 | acc_p0
+cnf(r_axiom33,axiom,(~p0 | acc_p0)) .
+
+
+%~p2 | acc_p2
+cnf(r_axiom34,axiom,(~p2 | acc_p2)) .
+
+
+%~p1 | acc_p1
+cnf(r_axiom35,axiom,(~p1 | acc_p1)) .
+
+
+%%%%%%%%%%%%%%%%%%%%% Copy of the axioms %%%%%%%%%%%%%%%%%%%%%
+
+
+%~acc_zcl_4 | acc_p3
+cnf(r_axiom36,axiom,(~acc_zcl_4 | acc_p3)) .
+
+
+%~acc_zcl_4 | acc_p5
+cnf(r_axiom37,axiom,(~acc_zcl_4 | acc_p5)) .
+
+
+%~acc_p3 | ~acc_p5 | acc_zcl_4
+cnf(r_axiom38,axiom,(~acc_p3 | ~acc_p5 | acc_zcl_4)) .
+
+
+%~acc_f0 | acc_zcl_4
+cnf(r_axiom39,axiom,(~acc_f0 | acc_zcl_4)) .
+
+
+%~acc_p3 | ~acc_p5 | acc_f0_p
+cnf(r_axiom40,axiom,(~acc_p3 | ~acc_p5 | acc_f0_p)) .
+
+
+%~acc_f2 | acc_p4 | acc_p3
+cnf(r_axiom41,axiom,(~acc_f2 | acc_p4 | acc_p3)) .
+
+
+%~acc_p4 | acc_f2_p
+cnf(r_axiom42,axiom,(~acc_p4 | acc_f2_p)) .
+
+
+%~acc_p3 | acc_f2_p
+cnf(r_axiom43,axiom,(~acc_p3 | acc_f2_p)) .
+
+
+%~acc_zcl_5 | acc_p0
+cnf(r_axiom44,axiom,(~acc_zcl_5 | acc_p0)) .
+
+
+%~acc_zcl_5 | acc_p2
+cnf(r_axiom45,axiom,(~acc_zcl_5 | acc_p2)) .
+
+
+%~acc_p0 | ~acc_p2 | acc_zcl_5
+cnf(r_axiom46,axiom,(~acc_p0 | ~acc_p2 | acc_zcl_5)) .
+
+
+%~acc_f4 | acc_zcl_5
+cnf(r_axiom47,axiom,(~acc_f4 | acc_zcl_5)) .
+
+
+%~acc_p0 | ~acc_p2 | acc_f4_p
+cnf(r_axiom48,axiom,(~acc_p0 | ~acc_p2 | acc_f4_p)) .
+
+
+%~acc_zcl_6 | acc_p1
+cnf(r_axiom49,axiom,(~acc_zcl_6 | acc_p1)) .
+
+
+%~acc_zcl_6 | acc_p0
+cnf(r_axiom50,axiom,(~acc_zcl_6 | acc_p0)) .
+
+
+%~acc_p1 | ~acc_p0 | acc_zcl_6
+cnf(r_axiom51,axiom,(~acc_p1 | ~acc_p0 | acc_zcl_6)) .
+
+
+%~acc_f5 | acc_zcl_6
+cnf(r_axiom52,axiom,(~acc_f5 | acc_zcl_6)) .
+
+
+%~acc_p1 | ~acc_p0 | acc_f5_p
+cnf(r_axiom53,axiom,(~acc_p1 | ~acc_p0 | acc_f5_p)) .
+
+
+%~acc_f3 | acc_f4 | acc_f5
+cnf(r_axiom54,axiom,(~acc_f3 | acc_f4 | acc_f5)) .
+
+
+%~acc_f4_p | acc_f3_p
+cnf(r_axiom55,axiom,(~acc_f4_p | acc_f3_p)) .
+
+
+%~acc_f5_p | acc_f3_p
+cnf(r_axiom56,axiom,(~acc_f5_p | acc_f3_p)) .
+
+
+%~acc_zcl_7 | acc_f2
+cnf(r_axiom57,axiom,(~acc_zcl_7 | acc_f2)) .
+
+
+%~acc_zcl_7 | acc_f3
+cnf(r_axiom58,axiom,(~acc_zcl_7 | acc_f3)) .
+
+
+%~acc_f2 | ~acc_f3 | acc_zcl_7
+cnf(r_axiom59,axiom,(~acc_f2 | ~acc_f3 | acc_zcl_7)) .
+
+
+%~acc_f1 | acc_zcl_7
+cnf(r_axiom60,axiom,(~acc_f1 | acc_zcl_7)) .
+
+
+%~acc_f2_p | ~acc_f3_p | acc_f1_p
+cnf(r_axiom61,axiom,(~acc_f2_p | ~acc_f3_p | acc_f1_p)) .
+
+
+%~acc_Q | acc_f0 | acc_f1
+cnf(r_axiom62,axiom,(~acc_q | acc_f0 | acc_f1)) .
+
+
+%~acc_f0_p | acc_Q
+cnf(r_axiom63,axiom,(~acc_f0_p | acc_q)) .
+
+
+%~acc_f1_p | acc_Q
+cnf(r_axiom64,axiom,(~acc_f1_p | acc_q)) .
+
+
+%%%%%%%%%%%%%%%%%%%%% Negated copy of the query %%%%%%%%%%%%%%%%%%%%%
+%(exists[]acc_Q)
+cnf(r_negated_conjecture0,negated_conjecture,(~acc_q)) .
+
+

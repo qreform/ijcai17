@@ -1,0 +1,38 @@
+cnf(47_0, ( l_p2 | ~l_f1 | l_p0 ), axiom, decoration(clause(left))).
+cnf(26_0, ( ~l_p2 | r_p2 ), axiom, decoration(clause(right))).
+res(48_10, 47_0, 26_0, l_p2; l_p2; l_p2, []).
+cnf(45_0, ( l_f1 | l_p1 ), axiom, decoration(clause(left))).
+res(48_9, 48_10, 45_0, l_f1; l_f1; l_f1, []).
+cnf(42_0, ( ~r_p2 | r_f1_p ), axiom, decoration(clause(right))).
+res(48_8, 48_9, 42_0, r_p2; r_p2; r_p2, []).
+cnf(41_0, ( ~l_p1 | r_p1 ), axiom, decoration(clause(right))).
+res(48_7, 48_8, 41_0, l_p1; l_p1; l_p1, []).
+cnf(8_0, ( ~r_f1_p | r_f0_p ), axiom, decoration(clause(right))).
+res(48_6, 48_7, 8_0, r_f1_p; r_f1_p; r_f1_p, []).
+cnf(38_0, ( ~r_p1 | r_f0_p ), axiom, decoration(clause(right))).
+res(48_5, 48_6, 38_0, r_p1; r_p1; r_p1, []).
+cnf(11_0, ( ~r_f0_p | ~r_f2_p ), axiom, decoration(clause(right))).
+res(48_4, 48_5, 11_0, r_f0_p; r_f0_p; r_f0_p, []).
+cnf(36_0, ( r_f2_p | ~r_f3_p ), axiom, decoration(clause(right))).
+res(48_3, 48_4, 36_0, r_f2_p; r_f2_p; r_f2_p, []).
+cnf(33_0, ( l_p3 | l_p2 | ~l_f3 ), axiom, decoration(clause(left))).
+cnf(29_0, ( ~l_p3 | r_p3 ), axiom, decoration(clause(right))).
+res(34_6, 33_0, 29_0, l_p3; l_p3; l_p3, []).
+res(34_5, 34_6, 26_0, l_p2; l_p2; l_p2, []).
+cnf(23_0, ( ~r_p3 | r_f3_p ), axiom, decoration(clause(right))).
+res(34_4, 34_5, 23_0, r_p3; r_p3; r_p3, []).
+cnf(21_0, ( ~r_p2 | r_f3_p ), axiom, decoration(clause(right))).
+res(34_3, 34_4, 21_0, r_p2; r_p2; r_p2, []).
+cnf(18_0, ( l_f3 | l_p0 ), axiom, decoration(clause(left))).
+res(34_2, 34_3, 18_0, l_f3; l_f3; l_f3, []).
+cnf(15_0, ( ~l_p0 | r_p0 ), axiom, decoration(clause(right))).
+res(34_1, 34_2, 15_0, l_p0; l_p0; l_p0, []).
+res(12_2, 11_0, 8_0, r_f0_p; r_f0_p; r_f0_p, []).
+cnf(5_0, ( r_f2_p | ~r_p0 ), axiom, decoration(clause(right))).
+res(12_1, 12_2, 5_0, r_f2_p; r_f2_p; r_f2_p, []).
+cnf(3_0, ( r_f1_p | ~r_p0 ), axiom, decoration(clause(right))).
+res(12_0, 12_1, 3_0, r_f1_p; r_f1_p; r_f1_p, []).
+res(34_0, 34_1, 12_0, r_p0; r_p0; r_p0, []).
+res(48_2, 48_3, 34_0, r_f3_p; r_f3_p; r_f3_p, []).
+res(48_1, 48_2, 15_0, l_p0; l_p0; l_p0, []).
+res(48_0, 48_1, 12_0, r_p0; r_p0; r_p0, []).

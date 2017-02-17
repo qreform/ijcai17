@@ -1,0 +1,106 @@
+
+# Proof found!
+# SZS status Unsatisfiable
+# SZS output start CNFRefutation.
+cnf(c_0_0, (acc_q|~acc_f1_p), axiom, decoration(clause(right))).
+cnf(c_0_1, (~acc_q), axiom, decoration(clause(right))).
+cnf(c_0_2, (f8|f9|~f7), axiom, decoration(clause(left))).
+cnf(c_0_3, (f6|f7|~f5), axiom, decoration(clause(left))).
+cnf(c_0_4, (acc_f1_p|~acc_f3_p), axiom, decoration(clause(right))).
+cnf(c_0_5, (f4|f5|~f3), axiom, decoration(clause(left))).
+cnf(c_0_6, (acc_f3_p|~acc_f5_p), axiom, decoration(clause(right))).
+cnf(c_0_7, (f2|f3|~f1), axiom, decoration(clause(left))).
+cnf(c_0_8, (f0|f1|~q), axiom, decoration(clause(left))).
+cnf(c_0_9, (q), axiom, decoration(clause(left))).
+cnf(c_0_10, (acc_f5_p|~acc_f6_p), axiom, decoration(clause(right))).
+cnf(c_0_11, (acc_f6_p|~acc_p5|~acc_p4), axiom, decoration(clause(right))).
+cnf(c_0_12, (acc_p4|~p4), axiom, decoration(clause(right))).
+cnf(c_0_13, (zcl_11|~f9), axiom, decoration(clause(left))).
+cnf(c_0_14, (acc_p5|~p5), axiom, decoration(clause(right))).
+cnf(c_0_15, (acc_f5_p|~acc_f7_p), axiom, decoration(clause(right))).
+cnf(c_0_16, (zcl_10|~f8), axiom, decoration(clause(left))).
+cnf(c_0_17, (p4|~zcl_9), axiom, decoration(clause(left))).
+cnf(c_0_18, (acc_f7_p|~acc_f9_p), axiom, decoration(clause(right))).
+cnf(c_0_19, (acc_f9_p|~acc_p0|~acc_p7), axiom, decoration(clause(right))).
+cnf(c_0_20, (zcl_9|~f6), axiom, decoration(clause(left))).
+cnf(c_0_21, (p5|~zcl_9), axiom, decoration(clause(left))).
+cnf(c_0_22, (acc_f7_p|~acc_f8_p), axiom, decoration(clause(right))).
+cnf(c_0_23, (acc_f8_p|~acc_p0|~acc_p6), axiom, decoration(clause(right))).
+cnf(c_0_24, (acc_p7|~p7), axiom, decoration(clause(right))).
+cnf(c_0_25, (acc_f3_p|~acc_f4_p), axiom, decoration(clause(right))).
+cnf(c_0_26, (acc_f4_p|~acc_p0|~acc_p3), axiom, decoration(clause(right))).
+cnf(c_0_27, (acc_p6|~p6), axiom, decoration(clause(right))).
+cnf(c_0_28, (acc_p0|~p0), axiom, decoration(clause(right))).
+cnf(c_0_29, (zcl_8|~f4), axiom, decoration(clause(left))).
+cnf(c_0_30, (acc_f1_p|~acc_f2_p), axiom, decoration(clause(right))).
+cnf(c_0_31, (acc_f2_p|~acc_p0|~acc_p2), axiom, decoration(clause(right))).
+cnf(c_0_32, (acc_p3|~p3), axiom, decoration(clause(right))).
+cnf(c_0_33, (p7|~zcl_11), axiom, decoration(clause(left))).
+cnf(c_0_34, (zcl_7|~f2), axiom, decoration(clause(left))).
+cnf(c_0_35, (acc_q|~acc_f0_p), axiom, decoration(clause(right))).
+cnf(c_0_36, (acc_p2|~p2), axiom, decoration(clause(right))).
+cnf(c_0_37, (p6|~zcl_10), axiom, decoration(clause(left))).
+cnf(c_0_38, (p0|~zcl_11), axiom, decoration(clause(left))).
+cnf(c_0_39, (acc_f0_p|~acc_p1|~acc_p0), axiom, decoration(clause(right))).
+cnf(c_0_40, (p3|~zcl_8), axiom, decoration(clause(left))).
+cnf(c_0_41, (p0|~zcl_10), axiom, decoration(clause(left))).
+cnf(c_0_42, (p2|~zcl_7), axiom, decoration(clause(left))).
+cnf(c_0_43, (p0|~zcl_8), axiom, decoration(clause(left))).
+cnf(c_0_44, (acc_p1|~p1), axiom, decoration(clause(right))).
+cnf(c_0_45, (p0|~zcl_7), axiom, decoration(clause(left))).
+cnf(c_0_46, (p0|~zcl_6), axiom, decoration(clause(left))).
+cnf(c_0_47, (p1|~zcl_6), axiom, decoration(clause(left))).
+cnf(c_0_48, (zcl_6|~f0), axiom, decoration(clause(left))).
+cnf(c_0_49, (~acc_f1_p), sr(c_0_0, c_0_1)).
+cnf(c_0_50, (f9|f8|f6|~f5), pm(c_0_2, c_0_3)).
+cnf(c_0_51, (~acc_f3_p), pm(c_0_49, c_0_4)).
+cnf(c_0_52, (f9|f8|f6|f4|~f3), pm(c_0_50, c_0_5)).
+cnf(c_0_53, (~acc_f5_p), pm(c_0_51, c_0_6)).
+cnf(c_0_54, (f9|f8|f6|f4|f2|~f1), pm(c_0_52, c_0_7)).
+cnf(c_0_55, (f1|f0), cn(rw(c_0_8, c_0_9))).
+cnf(c_0_56, (~acc_p4|~acc_p5), sr(pm(c_0_10, c_0_11), c_0_53)).
+cnf(c_0_57, (f9|f8|f6|f4|f2|f0), pm(c_0_54, c_0_55)).
+cnf(c_0_58, (~acc_p5|~p4), pm(c_0_56, c_0_12)).
+cnf(c_0_59, (zcl_11|f8|f6|f4|f2|f0), pm(c_0_13, c_0_57)).
+cnf(c_0_60, (~p4|~p5), pm(c_0_58, c_0_14)).
+cnf(c_0_61, (~acc_f7_p), pm(c_0_53, c_0_15)).
+cnf(c_0_62, (zcl_11|zcl_10|f6|f4|f2|f0), pm(c_0_16, c_0_59)).
+cnf(c_0_63, (~p5|~zcl_9), pm(c_0_60, c_0_17)).
+cnf(c_0_64, (~acc_p7|~acc_p0), sr(pm(c_0_18, c_0_19), c_0_61)).
+cnf(c_0_65, (zcl_11|zcl_10|zcl_9|f4|f2|f0), pm(c_0_20, c_0_62)).
+cnf(c_0_66, (~zcl_9), pm(c_0_63, c_0_21)).
+cnf(c_0_67, (~acc_p6|~acc_p0), sr(pm(c_0_22, c_0_23), c_0_61)).
+cnf(c_0_68, (~acc_p0|~p7), pm(c_0_64, c_0_24)).
+cnf(c_0_69, (zcl_11|zcl_10|f4|f2|f0), sr(c_0_65, c_0_66)).
+cnf(c_0_70, (~acc_p3|~acc_p0), sr(pm(c_0_25, c_0_26), c_0_51)).
+cnf(c_0_71, (~acc_p0|~p6), pm(c_0_67, c_0_27)).
+cnf(c_0_72, (~p7|~p0), pm(c_0_68, c_0_28)).
+cnf(c_0_73, (zcl_11|zcl_10|zcl_8|f2|f0), pm(c_0_29, c_0_69)).
+cnf(c_0_74, (~acc_p2|~acc_p0), sr(pm(c_0_30, c_0_31), c_0_49)).
+cnf(c_0_75, (~acc_p0|~p3), pm(c_0_70, c_0_32)).
+cnf(c_0_76, (~p6|~p0), pm(c_0_71, c_0_28)).
+cnf(c_0_77, (~zcl_11|~p0), pm(c_0_72, c_0_33)).
+cnf(c_0_78, (zcl_11|zcl_10|zcl_8|zcl_7|f0), pm(c_0_34, c_0_73)).
+cnf(c_0_79, (~acc_f0_p), sr(c_0_35, c_0_1)).
+cnf(c_0_80, (~acc_p0|~p2), pm(c_0_74, c_0_36)).
+cnf(c_0_81, (~p3|~p0), pm(c_0_75, c_0_28)).
+cnf(c_0_82, (~zcl_10|~p0), pm(c_0_76, c_0_37)).
+cnf(c_0_83, (zcl_10|zcl_8|zcl_7|f0|~p0), pm(c_0_77, c_0_78)).
+cnf(c_0_84, (zcl_10|zcl_8|zcl_7|f0|p0), pm(c_0_38, c_0_78)).
+cnf(c_0_85, (~acc_p0|~acc_p1), sr(c_0_39, c_0_79)).
+cnf(c_0_86, (~p2|~p0), pm(c_0_80, c_0_28)).
+cnf(c_0_87, (~zcl_8|~p0), pm(c_0_81, c_0_40)).
+cnf(c_0_88, (zcl_8|zcl_7|f0|~p0), pm(c_0_82, c_0_83)).
+cnf(c_0_89, (zcl_8|zcl_7|f0|p0), pm(c_0_41, c_0_84)).
+cnf(c_0_90, (~acc_p1|~p0), pm(c_0_85, c_0_28)).
+cnf(c_0_91, (~zcl_7|~p0), pm(c_0_86, c_0_42)).
+cnf(c_0_92, (zcl_7|f0|~p0), pm(c_0_87, c_0_88)).
+cnf(c_0_93, (zcl_7|f0|p0), pm(c_0_43, c_0_89)).
+cnf(c_0_94, (~p0|~p1), pm(c_0_90, c_0_44)).
+cnf(c_0_95, (f0|~p0), pm(c_0_91, c_0_92)).
+cnf(c_0_96, (f0|p0), pm(c_0_45, c_0_93)).
+cnf(c_0_97, (~p1|~zcl_6), pm(c_0_94, c_0_46)).
+cnf(c_0_98, (f0), pm(c_0_95, c_0_96)).
+cnf(c_0_99, (~zcl_6), pm(c_0_97, c_0_47)).
+cnf(c_0_100, (), sr(cn(rw(c_0_48, c_0_98)), c_0_99)).
+# SZS output end CNFRefutation.
